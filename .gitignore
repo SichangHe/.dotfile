@@ -1,0 +1,10 @@
+*
+.*
+!.gitignore
+!.config
+!.config
+!.hammerspoon
+!.bash_profile
+!.bashrc
+!.skhdrc
+!.zshrc

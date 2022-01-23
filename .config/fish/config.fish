@@ -1,13 +1,10 @@
 set -gx PATH /usr/local/bin $PATH
 set PATH -gx /opt/homebrew/bin $PATH
-
+set PATH -gx /Users/sichanghe/.cargo/bin $PATH
+set PATH -gx /Applications/MATLAB_R2021b.app/bin $PATH
+set PATH -gx /Applications/Julia-1.7.app/Contents/Resources/julia/bin $PATH
 # starship
 starship init fish | source 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-eval /Users/sichanghe/opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-# <<< conda initialize <<<
 
 
 set -gx EDITOR "code"
@@ -15,8 +12,7 @@ set -gx EDITOR "code"
 #! below are my alias
 alias i="arch -x86_64"
 
-# the conda python
-alias py="/Users/sichanghe/opt/miniconda3/bin/python"
+alias py=python3
 
 # ls
 alias l="exa"
