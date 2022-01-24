@@ -1,8 +1,20 @@
 # focus window
-hyper - j : yabai -m window --focus prev; \
-          yabai -m window --focus stack.prev
-hyper - k : yabai -m window --focus next; \
-          yabai -m window --focus stack.next
+hyper - j : if test (yabai -m config --space mouse layout) = "bsp"; \
+                yabai -m window --focus prev; \
+            else; \
+                if test (yabai -m config --space mouse layout) = "float"; \
+                    yabai -m config --space mouse layout stack; \
+                end; \
+                yabai -m window --focus stack.prev; \
+            end
+hyper - k : if test (yabai -m config --space mouse layout) = "bsp"; \
+                yabai -m window --focus next; \
+            else; \
+                if test (yabai -m config --space mouse layout) = "float"; \
+                    yabai -m config --space mouse layout stack; \
+                end; \
+                yabai -m window --focus stack.next; \
+            end
 
 # focus display
 hyper - n : yabai -m display 1 --focus 1
