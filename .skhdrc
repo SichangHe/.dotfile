@@ -17,8 +17,8 @@
 #            end
 
 # focus display
-#hyper - n : yabai -m display 1 --focus 1
-#hyper - m : yabai -m display 2 --focus 2
+hyper - n : yabai -m display 1 --focus 1
+hyper - m : yabai -m display 2 --focus 2
 
 # Moving windows
 #shift + alt - h : yabai -m window --warp west
@@ -84,6 +84,9 @@ shift + alt - y : yabai -m space --mirror y-axis
 
 # Float / Unfloat window
 hyper - space : yabai -m window --toggle float; osascript -e 'display notification "toggle float current window" with title "Yabai"'
+
+# Show desktop index
+hyper - i : osascript -e 'display notification "'(yabai -m query --spaces --space mouse | jq '.index')'" with title "desktop"'
 
 # Restart Yabai
 hyper - y : brew services restart yabai; osascript -e 'display notification "restart yabai" with title "skhd"'
