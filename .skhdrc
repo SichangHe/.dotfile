@@ -83,7 +83,7 @@ shift + alt - y : yabai -m space --mirror y-axis
 #shift + lctrl + alt - l : yabai -m window --insert east
 
 # Float / Unfloat window
-hyper - space : yabai -m window --toggle float; osascript -e 'display notification "toggle float current window" with title "Yabai"'
+hyper - space : yabai -m window --toggle float
 
 # Show desktop index
 hyper - i : osascript -e 'display notification "'(yabai -m query --spaces --space mouse | jq '.index')'" with title "desktop"'
