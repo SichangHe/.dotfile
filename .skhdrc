@@ -69,8 +69,8 @@ shift + alt - f : if test (yabai -m config mouse_follows_focus) = "off"; \
 hyper - e : yabai -m space --balance
 
 # Rotate windows clockwise and anticlockwise
-alt - r         : yabai -m space --rotate 270
-shift + alt - r : yabai -m space --rotate 90
+hyper - r         : yabai -m space --rotate 270
+hyper - t : yabai -m space --rotate 90
 
 # Rotate on X and Y Axis
 shift + alt - x : yabai -m space --mirror x-axis
