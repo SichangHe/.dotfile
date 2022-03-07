@@ -109,5 +109,5 @@ hyper - space : yabai -m window --toggle float
 hyper - i : osascript -e 'display notification "'(yabai -m query --spaces --space mouse | jq '.index')'" with title "desktop"'
 
 # Restart Yabai
-hyper - y : brew services restart yabai; osascript -e 'display notification "restart yabai" with title "skhd"'
-hyper - u : brew services restart skhd; osascript -e 'display notification "restart skhd" with title "skhd"'
+hyper - y : brew services restart yabai; sudo yabai --load-sa; osascript -e 'display notification "restart yabai" with title "skhd"'
+hyper - u : brew services restart skhd; sudo yabai --load-sa; osascript -e 'display notification "restart skhd" with title "skhd"'
