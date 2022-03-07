@@ -7,7 +7,7 @@ set PATH -gx /Applications/Julia-1.7.app/Contents/Resources/julia/bin $PATH
 starship init fish | source 
 
 
-set -gx EDITOR "code"
+set -gx EDITOR "vim"
 
 #! below are my alias
 alias i="arch -x86_64"
