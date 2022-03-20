@@ -6,6 +6,8 @@ set PATH -gx /Applications/Julia-1.7.app/Contents/Resources/julia/bin $PATH
 # starship
 starship init fish | source 
 
+# SAG client
+set PATH -gx /Users/sichanghe/Desktop/COMP\ 301/sag_client_install/bin $PATH
 
 set -gx EDITOR "vim"
 
